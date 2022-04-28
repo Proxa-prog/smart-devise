@@ -8,11 +8,30 @@
     <title>Smart Devise</title>
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico">
+    <link rel="preload" href="fonts/ptmono-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/roboto-condensed-bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/roboto-condensed-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/roboto-medium.woff2" as="font" type="font/woff2" crossorigin>
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <div class="container"></div>
+      <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <nav class="header__nav">
+                <svg width="215" heigth="55" viewBox="0 0 215 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite/sprite.svg#website-logo-smart-device"></use>
+                </svg>
+
+              <ul class="header__list">
+                <li class="header__item header__item-mail"><a href="mailto:info@sd.ru">info@sd.ru</a></li>
+                <li class="header__item header__item-phone"><a href="tel:++74950005252">+7 (495) 000 52 52</a></li>
+              </ul>
+
+              <button class="header__button" type="button">Заказать звонок</button>
+            </nav>
+          </div>
+        </div>
       </header>
       <main>
         <section class="intro">

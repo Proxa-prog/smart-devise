@@ -775,6 +775,107 @@ button,
   pointer-events: auto;
 }
 
+.header {
+  position: sticky;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(84.9%, #041827), to(rgba(4, 24, 39, 0)));
+  background: -o-linear-gradient(top, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+  background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+  color: #F2F5F7;
+}
+
+.header__inner {
+  padding: 19px 310px 35px;
+}
+
+.header__nav {
+  width: 100%;
+  min-height: 79px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header__list {
+  margin: 0;
+  padding: 0;
+  margin-left: 196px;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header__item {
+  min-width: 251px;
+  padding-bottom: 12px;
+}
+
+.header__item a {
+  font-family: 'PT Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #F2F5F7;
+}
+
+.header__button {
+  min-width: 160px;
+  min-height: 40px;
+  margin-left: 87px;
+  margin-bottom: 10px;
+  color: #F2F5F7;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  border: 1px solid #F2F5F7;
+  border-radius: 3px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(84.9%, #041827), to(rgba(4, 24, 39, 0)));
+  background: -o-linear-gradient(top, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+  background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+}
+
+.header__item-mail {
+  position: relative;
+}
+
+.header__item-mail::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url("../../img/svg/email.svg");
+  left: -36px;
+  bottom: 11px;
+}
+
+.header__item-phone {
+  position: relative;
+}
+
+.header__item-phone::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url("../../img/svg/phone.svg");
+  left: -36px;
+  bottom: 11px;
+}
+
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {
