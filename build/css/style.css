@@ -781,14 +781,17 @@ button,
   background: -o-linear-gradient(top, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
   background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
   color: #F2F5F7;
+  min-width: 1024px;
 }
 
 .header__inner {
-  padding: 19px 310px 35px;
+  width: 1222px;
+  padding: 19px 0 35px;
+  margin: 0 auto;
 }
 
 .header__nav {
-  width: 100%;
+  min-width: 668px;
   min-height: 79px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -798,9 +801,11 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin: 0 auto;
 }
 
 .header__list {
+  width: 502px;
   margin: 0;
   padding: 0;
   margin-left: 196px;
@@ -832,7 +837,7 @@ button,
 .header__button {
   min-width: 160px;
   min-height: 40px;
-  margin-left: 87px;
+  margin-left: 88px;
   margin-bottom: 10px;
   color: #F2F5F7;
   text-transform: uppercase;
@@ -858,6 +863,7 @@ button,
   width: 20px;
   height: 20px;
   background-image: url("../../img/svg/email.svg");
+  background-repeat: no-repeat;
   left: -36px;
   bottom: 11px;
 }
@@ -872,8 +878,13 @@ button,
   width: 20px;
   height: 20px;
   background-image: url("../../img/svg/phone.svg");
+  background-repeat: no-repeat;
   left: -36px;
   bottom: 11px;
+}
+
+.header__logo-mobile {
+  display: none;
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
@@ -894,17 +905,75 @@ button,
   .container {
     padding: 0 32px;
   }
+
+  .header__inner {
+    width: auto;
+    padding: 14px 0;
+  }
+
+  .header__list {
+    width: 400px;
+    margin-left: auto;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    margin-right: 10px;
+  }
+
+  .header__item {
+    min-width: auto;
+    width: 41px;
+    height: 40px;
+    margin-left: 17px;
+    padding-bottom: 0;
+  }
+
+  .header__button {
+    display: none;
+  }
+
+  .header__item-mail a {
+    display: none;
+  }
+
+  .header__item-mail::before {
+    left: 0;
+    bottom: 0;
+    top: 3px;
+  }
+
+  .header__item-phone a {
+    display: none;
+  }
+
+  .header__item-phone::before {
+    left: 0;
+    bottom: 0;
+    top: 3px;
+  }
 }
 
 @media (max-width: 1023px) {
   .container {
-    padding: 0 24px;
+    padding: 0 50px;
+  }
+
+  .header {
+    min-width: 770px;
+  }
+
+  .header__inner {
+    padding: 8px 0;
+  }
+
+  .header__button {
+    display: none;
   }
 }
 
 @media (max-width: 767px) {
   .container {
-    padding: 0 16px;
+    padding: 0 26px;
   }
 
   .modal__wrapper {
@@ -918,5 +987,41 @@ button,
 
   .modal--fit-content .modal__content {
     width: 100%;
+  }
+
+  .header {
+    min-width: 320px;
+  }
+
+  .header__inner {
+    padding: 12px 0;
+  }
+
+  .header__nav {
+    min-height: 38px;
+    max-width: 767px;
+    min-width: 269px;
+  }
+
+  .header__list {
+    width: 224px;
+  }
+
+  .header__item-mail {
+    left: 9px;
+    top: 5px;
+  }
+
+  .header__item-phone {
+    left: 9px;
+    top: 5px;
+  }
+
+  .header__logo-desktop {
+    display: none;
+  }
+
+  .header__logo-mobile {
+    display: block;
   }
 }
