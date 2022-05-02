@@ -1,6 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
-import accordionOpen from './modules/accordion';
+import navigationListOpen from './modules/navigation';
+import contactsListOpen from './modules/contacts';
 
 // ---------------------------------
 
@@ -14,7 +15,8 @@ window.addEventListener('DOMContentLoaded', () => {
   // Modules
   // ---------------------------------
 
-  accordionOpen();
+  navigationListOpen();
+  contactsListOpen();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана

@@ -146,6 +146,7 @@
   @include vp-767 {
     width: 100%;
     padding-left: 0;
+    min-height: 0;
 
     &::after {
       position: absolute;
@@ -161,28 +162,66 @@
       margin-top: 0;
       position: relative;
 
-      &::before {
-        position: absolute;
-        content: "";
-        width: 15px;
-        height: 1px;
-        background-color: $color-border;
-        right: 1px;
-        top: 5px;
+      &.footer__contacts-before--closed {
+        &::before {
+          position: absolute;
+          content: "";
+          width: 15px;
+          height: 1px;
+          background-color: $color-border;
+          right: 0;
+          top: 5px;
+        }
+
+        &::after {
+          position: absolute;
+          content: "";
+          width: 1px;
+          height: 15px;
+          background-color: $color-border;
+          right: 7px;
+          top: -2px;
+        }
+      }
+
+      &.footer__contacts-before--open {
+        &::before {
+          position: absolute;
+          content: "";
+          width: 15px;
+          height: 1px;
+          background-color: $color-border;
+          right: 1px;
+          top: 5px;
+        }
+
+        &::after {
+          position: absolute;
+          content: "";
+          width: 0;
+          height: 0;
+          background-color: $color-border;
+          right: 7px;
+          top: -2px;
+        }
       }
     }
   }
 }
 
-.footer-contacts-list {
+.footer__contacts-list {
   min-width: 345px;
   margin-top: 22px;
-
 
   @include vp-767 {
     min-width: 0;
     width: 101%;
     margin-top: 18px;
+    display: none;
+
+    &.footer__contacts-list--open {
+      display: block;
+    }
   }
 }
 
@@ -259,24 +298,48 @@
     h2 {
       position: relative;
 
-      &::before {
-        position: absolute;
-        content: "";
-        width: 15px;
-        height: 1px;
-        background-color: $color-border;
-        right: 0;
-        top: 5px;
+      &.footer__navigation-before--closed {
+        &::before {
+          position: absolute;
+          content: "";
+          width: 15px;
+          height: 1px;
+          background-color: $color-border;
+          right: 0;
+          top: 5px;
+        }
+
+        &::after {
+          position: absolute;
+          content: "";
+          width: 1px;
+          height: 15px;
+          background-color: $color-border;
+          right: 7px;
+          top: -2px;
+        }
       }
 
-      &::after {
-        position: absolute;
-        content: "";
-        width: 1px;
-        height: 15px;
-        background-color: $color-border;
-        right: 7px;
-        top: -2px;
+      &.footer__navigation-before--open {
+        &::before {
+          position: absolute;
+          content: "";
+          width: 15px;
+          height: 1px;
+          background-color: $color-border;
+          right: 0;
+          top: 5px;
+        }
+
+        &::after {
+          position: absolute;
+          content: "";
+          width: 0;
+          height: 0;
+          background-color: $color-border;
+          right: 7px;
+          top: -2px;
+        }
       }
     }
   }
@@ -323,6 +386,10 @@
   @include vp-767 {
     width: 100%;
     display: none;
+
+    &.footer__navigation-list--open {
+      display: block;
+    }
   }
 }
 

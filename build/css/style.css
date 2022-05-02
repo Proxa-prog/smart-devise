@@ -970,7 +970,7 @@ ul {
   letter-spacing: 0.05em;
 }
 
-.footer-contacts-list {
+.footer__contacts-list {
   min-width: 345px;
   margin-top: 22px;
 }
@@ -1294,6 +1294,7 @@ ul {
   .footer__contacts {
     width: 100%;
     padding-left: 0;
+    min-height: 0;
   }
 
   .footer__contacts::after {
@@ -1311,7 +1312,27 @@ ul {
     position: relative;
   }
 
-  .footer__contacts h2::before {
+  .footer__contacts h2.footer__contacts-before--closed::before {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 1px;
+    background-color: rgba(248, 253, 255, 0.7);
+    right: 0;
+    top: 5px;
+  }
+
+  .footer__contacts h2.footer__contacts-before--closed::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 15px;
+    background-color: rgba(248, 253, 255, 0.7);
+    right: 7px;
+    top: -2px;
+  }
+
+  .footer__contacts h2.footer__contacts-before--open::before {
     position: absolute;
     content: "";
     width: 15px;
@@ -1321,10 +1342,25 @@ ul {
     top: 5px;
   }
 
-  .footer-contacts-list {
+  .footer__contacts h2.footer__contacts-before--open::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    background-color: rgba(248, 253, 255, 0.7);
+    right: 7px;
+    top: -2px;
+  }
+
+  .footer__contacts-list {
     min-width: 0;
     width: 101%;
     margin-top: 18px;
+    display: none;
+  }
+
+  .footer__contacts-list.footer__contacts-list--open {
+    display: block;
   }
 
   .footer-contacts-item {
@@ -1367,7 +1403,7 @@ ul {
     position: relative;
   }
 
-  .footer__navigation h2::before {
+  .footer__navigation h2.footer__navigation-before--closed::before {
     position: absolute;
     content: "";
     width: 15px;
@@ -1377,7 +1413,7 @@ ul {
     top: 5px;
   }
 
-  .footer__navigation h2::after {
+  .footer__navigation h2.footer__navigation-before--closed::after {
     position: absolute;
     content: "";
     width: 1px;
@@ -1387,8 +1423,32 @@ ul {
     top: -2px;
   }
 
+  .footer__navigation h2.footer__navigation-before--open::before {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 1px;
+    background-color: rgba(248, 253, 255, 0.7);
+    right: 0;
+    top: 5px;
+  }
+
+  .footer__navigation h2.footer__navigation-before--open::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    background-color: rgba(248, 253, 255, 0.7);
+    right: 7px;
+    top: -2px;
+  }
+
   .footer__navigation-list {
     width: 100%;
     display: none;
+  }
+
+  .footer__navigation-list.footer__navigation-list--open {
+    display: block;
   }
 }
