@@ -783,6 +783,9 @@ ul {
 
 .header {
   position: sticky;
+  z-index: 1000;
+  top: 0;
+  left: 0;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(84.9%, #041827), to(rgba(4, 24, 39, 0)));
   background: -o-linear-gradient(top, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
   background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
@@ -792,7 +795,7 @@ ul {
 
 .header__inner {
   width: 1222px;
-  padding: 19px 0 35px;
+  padding: 19px 0 13px;
   margin: 0 auto;
 }
 
@@ -1044,6 +1047,66 @@ ul {
   min-height: 35px;
 }
 
+.intro {
+  width: 100%;
+  background-color: #041827;
+  min-height: 880px;
+  background-image: url("../img/background_desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -10%;
+  margin-top: -112px;
+}
+
+.intro h1 {
+  margin: 0;
+}
+
+.intro__main-screen {
+  width: 51vw;
+  padding: 239px 5px;
+  margin: 0 auto;
+  color: #F2F5F7;
+}
+
+.intro__main-screen h2 {
+  font-weight: 700;
+  font-size: 4.18vw;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  margin-bottom: 33px;
+}
+
+.intro__main-screen p {
+  font-family: 'PT Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 155%;
+  width: 685px;
+  margin-bottom: 45px;
+}
+
+.intro__button {
+  width: 410px;
+  border: none;
+  min-height: 55px;
+  background: #00B2FF;
+  color: #F2F5F7;
+  border-radius: 3px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.intro__button .intro__button-mobile {
+  display: none;
+}
+
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {
@@ -1107,6 +1170,31 @@ ul {
     left: 0;
     bottom: 0;
     top: 3px;
+  }
+
+  .intro__main-screen {
+    width: 100%;
+    padding: 136px 0px;
+  }
+
+  .intro__main-screen h2 {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 94px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    margin-bottom: 33px;
+    margin-bottom: 0;
+  }
+
+  .intro__main-screen p {
+    width: 100%;
+    margin-top: -11px;
+    margin-bottom: 58px;
+  }
+
+  .intro__button {
+    margin-left: 45px;
   }
 }
 
@@ -1198,6 +1286,18 @@ ul {
   .footer__navigation-item {
     margin-bottom: 8px;
     min-height: 0;
+  }
+
+  .intro {
+    min-height: 656px;
+    background-size: cover;
+    background-image: url("../img/background_tablet.jpg");
+  }
+}
+
+@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+  .intro {
+    background-image: url("../img/background_tablet@2x.jpg");
   }
 }
 
@@ -1450,5 +1550,50 @@ ul {
 
   .footer__navigation-list.footer__navigation-list--open {
     display: block;
+  }
+
+  .intro {
+    background-image: url("../img/background_mobile.jpg");
+    min-height: 607px;
+    background-position: bottom;
+  }
+
+  .intro__main-screen {
+    padding: 124px 0;
+  }
+
+  .intro__main-screen h2 {
+    margin-top: 75px;
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .intro__main-screen p {
+    font-size: 14px;
+    line-height: 155%;
+    margin-top: 7px;
+    margin-bottom: 44px;
+  }
+
+  .intro__button {
+    width: 100%;
+    min-height: 43px;
+    margin-left: 0;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .intro__button .intro__button-desktop {
+    display: none;
+  }
+
+  .intro__button .intro__button-mobile {
+    display: inline;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .intro {
+    background-image: url("../img/background_desktop@2x.jpg");
   }
 }
