@@ -435,7 +435,7 @@ html {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "PT Mono", "Arial", sans-serif;
   color: #000000;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -789,7 +789,7 @@ ul {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(84.9%, #041827), to(rgba(4, 24, 39, 0)));
   background: -o-linear-gradient(top, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
   background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
-  color: #F2F5F7;
+  color: #f2f5f7;
   min-width: 1024px;
 }
 
@@ -835,12 +835,12 @@ ul {
 }
 
 .header__item a {
-  font-family: 'PT Mono';
+  font-family: "PT Mono";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  color: #F2F5F7;
+  color: #f2f5f7;
 }
 
 .header__button {
@@ -848,14 +848,14 @@ ul {
   min-height: 40px;
   margin-left: 88px;
   margin-bottom: 10px;
-  color: #F2F5F7;
+  color: #f2f5f7;
   text-transform: uppercase;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.05em;
-  border: 1px solid #F2F5F7;
+  border: 1px solid #f2f5f7;
   border-radius: 3px;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(84.9%, #041827), to(rgba(4, 24, 39, 0)));
   background: -o-linear-gradient(top, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
@@ -979,7 +979,7 @@ ul {
 }
 
 .footer-contacts-item {
-  font-family: 'PT Mono';
+  font-family: "PT Mono";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1027,7 +1027,7 @@ ul {
   width: 470px;
   min-height: 130px;
   padding-top: 5px;
-  font-family: 'PT Mono';
+  font-family: "PT Mono";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1066,7 +1066,7 @@ ul {
   width: 51vw;
   padding: 239px 5px;
   margin: 0 auto;
-  color: #F2F5F7;
+  color: #f2f5f7;
 }
 
 .intro__main-screen h2 {
@@ -1079,7 +1079,7 @@ ul {
 }
 
 .intro__main-screen p {
-  font-family: 'PT Mono';
+  font-family: "PT Mono";
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -1092,8 +1092,8 @@ ul {
   width: 410px;
   border: none;
   min-height: 55px;
-  background: #00B2FF;
-  color: #F2F5F7;
+  background: #00b2ff;
+  color: #f2f5f7;
   border-radius: 3px;
   font-weight: 700;
   font-size: 18px;
@@ -1174,7 +1174,7 @@ ul {
 
   .intro__main-screen {
     width: 100%;
-    padding: 136px 0px;
+    padding: 136px 0;
   }
 
   .intro__main-screen h2 {
@@ -1183,7 +1183,6 @@ ul {
     line-height: 94px;
     letter-spacing: 0.07em;
     text-transform: uppercase;
-    margin-bottom: 33px;
     margin-bottom: 0;
   }
 

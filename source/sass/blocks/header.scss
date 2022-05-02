@@ -76,14 +76,14 @@
   min-width: 251px;
   padding-bottom: 12px;
 
- a {
-  font-family: 'PT Mono';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  color: $color-text-white;
- }
+  a {
+    font-family: "PT Mono", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: $color-text-white;
+  }
 
   @include vp-1439 {
     min-width: auto;

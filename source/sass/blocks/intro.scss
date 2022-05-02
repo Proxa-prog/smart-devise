@@ -49,7 +49,7 @@
   }
 
   p {
-    font-family: 'PT Mono';
+    font-family: "PT Mono", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
@@ -60,7 +60,7 @@
 
   @include vp-1439 {
     width: 100%;
-    padding: 136px 0px;
+    padding: 136px 0;
 
     h2 {
       font-weight: 700;
@@ -68,7 +68,6 @@
       line-height: 94px;
       letter-spacing: 0.07em;
       text-transform: uppercase;
-      margin-bottom: 33px;
       margin-bottom: 0;
     }
 
