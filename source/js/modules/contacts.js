@@ -9,6 +9,6 @@ const contactsListOpen = () => {
     contactsListTitle.classList.toggle('footer__contacts-before--open');
     contactsListTitle.classList.toggle('footer__contacts-before--closed');
   });
-}
+};
 
 export default contactsListOpen;

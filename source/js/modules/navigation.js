@@ -9,6 +9,6 @@ const navigationListOpen = () => {
     navigationListTitle.classList.toggle('footer__navigation-before--open');
     navigationListTitle.classList.toggle('footer__navigation-before--closed');
   });
-}
+};
 
 export default navigationListOpen;
