@@ -1,0 +1,74 @@
+.advantages {
+  padding: 120px 316px 120px 349px;
+}
+
+// .advantages__list-wrapper {
+//   display: flex;
+//   justify-content: center;
+// }
+
+.advantages__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.advantages__item {
+  width: 595px;
+  padding: 40px 45px 45px;
+  margin-right: 32px;
+  min-height: 300px;
+  margin-bottom: 30px;
+  background-color: inherit;
+  position: relative;
+  border: 1px solid #EBEBEB;
+
+
+  h3 {
+    font-size: 24px;
+    line-height: 37px;
+    color: $color-deep-sky-blue;
+    margin-bottom: 0;
+    margin-top: 13px;
+  }
+
+  p {
+    margin-top: 12px;
+    font-family: 'PT Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 135%;
+    color: $color-night-blue;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background-color: $color-deep-sky-blue;
+    top: 0;
+    left: 0;
+  }
+
+  svg {
+    fill: $color-deep-sky-blue;
+  }
+
+  &:hover {
+    background-color: $color-deep-sky-blue;
+
+    h3 {
+      color: $color-alice-blue;
+    }
+
+    p {
+      color: $color-alice-blue;
+    }
+
+    svg {
+      fill: $color-alice-blue;
+    }
+  }
+}

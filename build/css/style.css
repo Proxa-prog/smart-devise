@@ -1107,6 +1107,80 @@ ul {
   display: none;
 }
 
+.advantages {
+  padding: 120px 316px 120px 349px;
+}
+
+.advantages__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.advantages__item {
+  width: 595px;
+  padding: 40px 45px 45px;
+  margin-right: 32px;
+  min-height: 300px;
+  margin-bottom: 30px;
+  background-color: inherit;
+  position: relative;
+  border: 1px solid #EBEBEB;
+}
+
+.advantages__item h3 {
+  font-size: 24px;
+  line-height: 37px;
+  color: #00b2ff;
+  margin-bottom: 0;
+  margin-top: 13px;
+}
+
+.advantages__item p {
+  margin-top: 12px;
+  font-family: 'PT Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 135%;
+  color: #041827;
+}
+
+.advantages__item::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  background-color: #00b2ff;
+  top: 0;
+  left: 0;
+}
+
+.advantages__item svg {
+  fill: #00b2ff;
+}
+
+.advantages__item:hover {
+  background-color: #00b2ff;
+}
+
+.advantages__item:hover h3 {
+  color: #f2f5f7;
+}
+
+.advantages__item:hover p {
+  color: #f2f5f7;
+}
+
+.advantages__item:hover svg {
+  fill: #f2f5f7;
+}
+
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {
