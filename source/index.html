@@ -1,117 +1,188 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Описание проекта">
-    <title>Smart Devise</title>
-    <link rel="stylesheet" href="css/style.min.css">
-    <link rel="icon" href="favicon.ico">
-    <link rel="preload" href="fonts/ptmono-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/roboto-condensed-bold.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/roboto-condensed-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/roboto-medium.woff2" as="font" type="font/woff2" crossorigin>
-  </head>
-  <body>
-    <div class="wrapper">
-      <header class="header">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Описание проекта">
+  <title>Smart Devise</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preload" href="fonts/ptmono-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/roboto-condensed-bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/roboto-condensed-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/roboto-medium.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <nav class="header__nav">
+            <svg class="header__logo-desktop" width="215" heigth="55" viewBox="0 0 215 55" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite/sprite.svg#website-logo-smart-device"></use>
+            </svg>
+
+            <svg class="header__logo-mobile" width="35" heigth="35" viewBox="0 0 55 55" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite/sprite.svg#website-logo"></use>
+            </svg>
+
+            <ul class="header__list">
+              <li class="header__item header__item-mail"><a href="mailto:info@sd.ru">info@sd.ru</a></li>
+              <li class="header__item header__item-phone"><a href="tel:++74950005252">+7 (495) 000 52 52</a></li>
+            </ul>
+
+            <button class="header__button" type="button">Заказать звонок</button>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="intro">
+        <h1 class="visually-hidden">Smart Device</h1>
+
         <div class="container">
-          <div class="header__inner">
-            <nav class="header__nav">
-                <svg class="header__logo-desktop" width="215" heigth="55" viewBox="0 0 215 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="img/sprite/sprite.svg#website-logo-smart-device"></use>
-                </svg>
+          <div class="intro__main-screen">
+            <h2>Печатные платы</h2>
 
-                <svg class="header__logo-mobile" width="35" heigth="35" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="img/sprite/sprite.svg#website-logo"></use>
-                </svg>
+            <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
 
-              <ul class="header__list">
-                <li class="header__item header__item-mail"><a href="mailto:info@sd.ru">info@sd.ru</a></li>
-                <li class="header__item header__item-phone"><a href="tel:++74950005252">+7 (495) 000 52 52</a></li>
-              </ul>
-
-              <button class="header__button" type="button">Заказать звонок</button>
-            </nav>
+            <button class="intro__button" type="button"><span class="intro__button-desktop">Получить бесплатную
+                консультацию</span><span class="intro__button-mobile">Бесплатная консультация</span></button>
           </div>
         </div>
-      </header>
-      <main>
-        <section class="intro">
-          <h1 class="visually-hidden">Smart Device</h1>
+      </section>
 
-          <div class="container">
-            <div class="intro__main-screen">
-              <h2>Печатные платы</h2>
-
-              <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-
-              <button class="intro__button" type="button"><span class="intro__button-desktop">Получить бесплатную консультацию</span><span class="intro__button-mobile">Бесплатная консультация</span></button>
-            </div>
-          </div>
-        </section>
-      </main>
-      <footer class="footer">
+      <section class="advantages">
         <div class="container">
-          <div class="footer__inner">
-            <div class="footer__social">
-              <svg class="footer__logo-desktop" width="215" heigth="55" viewBox="0 0 215 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="img/sprite/sprite.svg#website-logo-smart-device"></use>
+          <ul class="advantages__list">
+            <li class="advantages__item advantages__item-terms">
+              <div class="advantages__item-inner">
+                <svg class="advantages__stopwatch" width="35" heigth="35" viewBox="0 0 55 55" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite/sprite.svg#stopwatch"></use>
               </svg>
 
-              <div class="footer__social-media">
-                <ul class="footer__social-list">
-                  <li class="footer__social-item footer__social-item-facebook"></li>
-                  <li class="footer__social-item footer__social-item-ok"></li>
-                  <li class="footer__social-item footer__social-item-vk"></li>
-                </ul>
+              <h3>Оперативные сроки </h3>
+
+              <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять
+                заказы плат и комплектующих в самые короткие сроки</p>
               </div>
-            </div>
 
-            <div class="footer__navigation">
-              <h2 class="footer__navigation-before--closed">Разделы сайта</h2>
+            </li>
+            <li class="advantages__item advantages__item-purveyor">
+              <div class="advantages__item-inner">
+                <svg class="advantages__hired" width="35" heigth="35" viewBox="0 0 55 55" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite/sprite.svg#hired"></use>
+              </svg>
 
-              <button class="footer__navigation-button"><span class="visually-hidden">Подробнее</span></button>
+              <h3>Крупные поставщики</h3>
 
-              <ul class="footer__navigation-list">
-                <li>
-                  <ul>
-                    <li class="footer__navigation-item">О Компании</li>
-                    <li class="footer__navigation-item">Продукты</li>
-                    <li class="footer__navigation-item">Производство печатных плат</li>
-                    <li class="footer__navigation-item">Монтаж печатных плат</li>
-                  </ul>
-                </li>
-                <li>
-                  <ul>
-                    <li class="footer__navigation-item">Комплектующие</li>
-                    <li class="footer__navigation-item">Доставка</li>
-                    <li class="footer__navigation-item">Контакты</li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
+              <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND.
+                Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.
+              </p>
+              </div>
 
-            <div class="footer__contacts">
-              <h2 class="footer__contacts-before--closed">Наш офис</h2>
+            </li>
+            <li class="advantages__item advantages__item-confidentiality">
+              <div class="advantages__item-inner">
+                <svg class="advantages__detective" width="35" heigth="35" viewBox="0 0 55 55" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite/sprite.svg#detective"></use>
+              </svg>
 
-              <button class="footer__contacts-button"><span class="visually-hidden">Подробнее</span></button>
+              <h3>Полная конфиденциальность</h3>
 
-              <ul class="footer__contacts-list">
-                <li class="footer-contacts-item">г. Мытищи, Олимпийский проспект, д.10</li>
-                <li class="footer-contacts-item">+7 (495) 589-40-50</li>
-                <li class="footer-contacts-item">+7 (925) 389-58-29</li>
-                <li class="footer-contacts-item">+7 (925) 364-78-13</li>
+              <p>По желанию клиента мы обеспечиваем полную конфеденциальность.
+              </p>
+              </div>
+
+            </li>
+            <li class="advantages__item advantages__item-cost">
+              <div class="advantages__item-inner">
+                <svg class="advantages__tag" width="35" heigth="35" viewBox="0 0 55 55" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite/sprite.svg#tag"></use>
+              </svg>
+
+              <h3>Персонализация стоимости</h3>
+
+              <p>Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас
+                устраивает.</p>
+              </div>
+
+            </li>
+          </ul>
+        </div>
+
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__social">
+            <svg class="footer__logo-desktop" width="215" heigth="55" viewBox="0 0 215 55" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite/sprite.svg#website-logo-smart-device"></use>
+            </svg>
+
+            <div class="footer__social-media">
+              <ul class="footer__social-list">
+                <li class="footer__social-item footer__social-item-facebook"></li>
+                <li class="footer__social-item footer__social-item-ok"></li>
+                <li class="footer__social-item footer__social-item-vk"></li>
               </ul>
             </div>
           </div>
-        </div>
-      </footer>
-    </div>
 
-    <!-- Модалки -->
-    <!-- <div class="modal modal--preload" data-modal="feedback">
+          <div class="footer__navigation">
+            <h2 class="footer__navigation-before--closed">Разделы сайта</h2>
+
+            <button class="footer__navigation-button"><span class="visually-hidden">Подробнее</span></button>
+
+            <ul class="footer__navigation-list">
+              <li>
+                <ul>
+                  <li class="footer__navigation-item">О Компании</li>
+                  <li class="footer__navigation-item">Продукты</li>
+                  <li class="footer__navigation-item">Производство печатных плат</li>
+                  <li class="footer__navigation-item">Монтаж печатных плат</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li class="footer__navigation-item">Комплектующие</li>
+                  <li class="footer__navigation-item">Доставка</li>
+                  <li class="footer__navigation-item">Контакты</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__contacts">
+            <h2 class="footer__contacts-before--closed">Наш офис</h2>
+
+            <button class="footer__contacts-button"><span class="visually-hidden">Подробнее</span></button>
+
+            <ul class="footer__contacts-list">
+              <li class="footer-contacts-item">г. Мытищи, Олимпийский проспект, д.10</li>
+              <li class="footer-contacts-item">+7 (495) 589-40-50</li>
+              <li class="footer-contacts-item">+7 (925) 389-58-29</li>
+              <li class="footer-contacts-item">+7 (925) 364-78-13</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Модалки -->
+  <!-- <div class="modal modal--preload" data-modal="feedback">
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
         <div class="modal__content">
@@ -139,7 +210,8 @@
       </div>
     </div> -->
 
-    <script src="js/vendor.min.js"></script>
-    <script src="js/main.min.js"></script>
-  </body>
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
 </html>
