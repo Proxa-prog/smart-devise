@@ -1108,7 +1108,7 @@ ul {
 }
 
 .advantages {
-  padding: 120px 316px 120px 349px;
+  padding: 120px 276px 120px 309px;
 }
 
 .advantages__list {
@@ -1365,6 +1365,43 @@ ul {
     min-height: 656px;
     background-size: cover;
     background-image: url("../img/background_tablet.jpg");
+  }
+
+  .advantages {
+    padding: 80px 0;
+  }
+
+  .advantages__item {
+    width: 320px;
+    min-height: 360px;
+    padding-bottom: 3px;
+    padding-left: 42px;
+    margin-bottom: 31px;
+    margin-right: 0;
+  }
+
+  .advantages__item h3 {
+    margin-top: 7px;
+  }
+
+  .advantages__item p {
+    margin-top: 7px;
+  }
+
+  .advantages__item:nth-child(odd) {
+    margin-right: 30px;
+  }
+
+  .advantages__item-confidentiality p {
+    margin-top: 0;
+  }
+
+  .advantages__item-cost h3 {
+    margin-top: 1px;
+  }
+
+  .advantages__item-cost p {
+    margin-top: 1px;
   }
 }
 

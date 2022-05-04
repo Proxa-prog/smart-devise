@@ -1,11 +1,10 @@
 .advantages {
-  padding: 120px 316px 120px 349px;
-}
+  padding: 120px 276px 120px 309px;
 
-// .advantages__list-wrapper {
-//   display: flex;
-//   justify-content: center;
-// }
+  @include vp-1023 {
+    padding: 80px 0;
+  }
+}
 
 .advantages__list {
   display: flex;
@@ -69,6 +68,47 @@
 
     svg {
       fill: $color-alice-blue;
+    }
+  }
+
+  @include vp-1023 {
+    width: 320px;
+    min-height: 360px;
+    padding-bottom: 3px;
+    padding-left: 42px;
+    margin-bottom: 31px;
+    margin-right: 0;
+
+    h3 {
+      margin-top: 7px;
+    }
+
+    p {
+      margin-top: 7px;
+    }
+
+    &:nth-child(odd) {
+      margin-right: 30px;
+    }
+  }
+}
+
+.advantages__item-confidentiality {
+  @include vp-1023 {
+    p {
+      margin-top: 0;
+    }
+  }
+}
+
+.advantages__item-cost {
+  @include vp-1023 {
+    h3 {
+      margin-top: 1px;
+    }
+
+    p {
+      margin-top: 1px;
     }
   }
 }
