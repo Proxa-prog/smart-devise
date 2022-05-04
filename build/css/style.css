@@ -1700,6 +1700,46 @@ ul {
   .intro__button .intro__button-mobile {
     display: inline;
   }
+
+  .advantages {
+    padding: 50px 0;
+  }
+
+  .advantages__item {
+    width: 100%;
+    min-height: 325px;
+    padding: 30px 30px 35px;
+  }
+
+  .advantages__item:nth-child(odd) {
+    margin-right: 0;
+  }
+
+  .advantages__item h3 {
+    font-size: 20px;
+    margin-top: 10px;
+    line-height: 140.62%;
+  }
+
+  .advantages__item p {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 37px;
+  }
+
+  .advantages__item svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .advantages__item-inner {
+    height: 100%;
+  }
+
+  .advantages__item-purveyor {
+    margin-bottom: 30px;
+    padding-bottom: 18px;
+  }
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {

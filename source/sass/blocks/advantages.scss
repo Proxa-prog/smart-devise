@@ -4,6 +4,10 @@
   @include vp-1023 {
     padding: 80px 0;
   }
+
+  @include vp-767 {
+    padding: 50px 0;
+  }
 }
 
 .advantages__list {
@@ -91,6 +95,39 @@
       margin-right: 30px;
     }
   }
+
+  @include vp-767 {
+    width: 100%;
+    min-height: 325px;
+    padding: 30px 30px 35px;
+
+    &:nth-child(odd) {
+      margin-right: 0;
+    }
+
+    h3 {
+      font-size: 20px;
+      margin-top: 10px;
+      line-height: 140.62%;
+    }
+
+    p {
+      font-size: 14px;
+      margin-top: 10px;
+      margin-bottom: 37px;
+    }
+
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+.advantages__item-inner {
+  @include vp-767 {
+    height: 100%;
+  }
 }
 
 .advantages__item-confidentiality {
@@ -110,5 +147,12 @@
     p {
       margin-top: 1px;
     }
+  }
+}
+
+.advantages__item-purveyor {
+  @include vp-767 {
+    margin-bottom: 30px;
+    padding-bottom: 18px;
   }
 }
