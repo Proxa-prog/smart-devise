@@ -2,7 +2,11 @@
   padding: 37px 276px 98px 309px;
 
   @include vp-1023 {
-    padding: 0 0 98px 0;
+    padding: 0 0 79px 0;
+  }
+
+  @include vp-767 {
+    padding-bottom: 80px;
   }
 }
 
@@ -13,6 +17,12 @@
   img {
     width: 150px;
     height: 320px;
+  }
+
+  @include vp-767 {
+    img {
+      display: none;
+    }
   }
 }
 
@@ -46,6 +56,25 @@
       margin-bottom: 17px;
     }
   }
+
+  @include vp-767 {
+    padding: 0;
+    h3 {
+      font-size: 28px;
+      line-height: 140.62%;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 134.4%;
+      margin-top: 13px;
+      margin-bottom: 17px;
+
+      span {
+        display: none;
+      }
+    }
+  }
 }
 
 .about-company__show-more {
@@ -64,5 +93,10 @@
 
   @include vp-1023 {
     margin-top: 0;
+  }
+
+  @include vp-767 {
+    min-width: 160px;
+    min-height: 35px;
   }
 }

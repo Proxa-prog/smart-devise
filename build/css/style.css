@@ -1463,7 +1463,7 @@ ul {
   }
 
   .about-company {
-    padding: 0 0 98px 0;
+    padding: 0 0 79px 0;
   }
 
   .about-company__text-wrapper {
@@ -1776,7 +1776,7 @@ ul {
   }
 
   .advantages {
-    padding: 50px 0;
+    padding: 50px 0 8px;
   }
 
   .advantages__item {
@@ -1813,6 +1813,39 @@ ul {
   .advantages__item-purveyor {
     margin-bottom: 30px;
     padding-bottom: 18px;
+  }
+
+  .about-company {
+    padding-bottom: 80px;
+  }
+
+  .about-company__inner img {
+    display: none;
+  }
+
+  .about-company__text-wrapper {
+    padding: 0;
+  }
+
+  .about-company__text-wrapper h3 {
+    font-size: 28px;
+    line-height: 140.62%;
+  }
+
+  .about-company__text-wrapper p {
+    font-size: 14px;
+    line-height: 134.4%;
+    margin-top: 13px;
+    margin-bottom: 17px;
+  }
+
+  .about-company__text-wrapper p span {
+    display: none;
+  }
+
+  .about-company__show-more {
+    min-width: 160px;
+    min-height: 35px;
   }
 }
 
