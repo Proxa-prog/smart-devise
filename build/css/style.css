@@ -1130,7 +1130,7 @@ ul {
   margin-bottom: 30px;
   background-color: inherit;
   position: relative;
-  border: 1px solid #EBEBEB;
+  border: 1px solid #ebebeb;
 }
 
 .advantages__item h3 {
@@ -1143,7 +1143,7 @@ ul {
 
 .advantages__item p {
   margin-top: 12px;
-  font-family: 'PT Mono';
+  font-family: "PT Mono", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1217,7 +1217,7 @@ ul {
   font-size: 36px;
   line-height: 51px;
   font-weight: 400;
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed", sans-serif;
   font-style: normal;
   margin-top: 0;
   margin-bottom: 0;
@@ -1226,7 +1226,7 @@ ul {
 .about-company__text-wrapper p {
   font-size: 16px;
   line-height: 22px;
-  font-family: 'PT Mono';
+  font-family: "PT Mono", sans-serif;
   font-style: normal;
   margin-top: 10px;
   margin-bottom: 21px;
@@ -1604,7 +1604,7 @@ ul {
     position: relative;
   }
 
-  .footer__contacts h2.footer__contacts-before--closed::before {
+  .footer__contacts h2.footer__contacts-before-closed::before {
     position: absolute;
     content: "";
     width: 15px;
@@ -1614,7 +1614,7 @@ ul {
     top: 5px;
   }
 
-  .footer__contacts h2.footer__contacts-before--closed::after {
+  .footer__contacts h2.footer__contacts-before-closed::after {
     position: absolute;
     content: "";
     width: 1px;
@@ -1695,7 +1695,7 @@ ul {
     position: relative;
   }
 
-  .footer__navigation h2.footer__navigation-before--closed::before {
+  .footer__navigation h2.footer__navigation-before-closed::before {
     position: absolute;
     content: "";
     width: 15px;
@@ -1705,7 +1705,7 @@ ul {
     top: 5px;
   }
 
-  .footer__navigation h2.footer__navigation-before--closed::after {
+  .footer__navigation h2.footer__navigation-before-closed::after {
     position: absolute;
     content: "";
     width: 1px;
