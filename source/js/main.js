@@ -2,6 +2,8 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import navigationListOpen from './modules/navigation';
 import contactsListOpen from './modules/contacts';
+import resizeWindow from './modules/resize';
+import checkWindowWidth from './modules/check-window-width';
 
 // ---------------------------------
 
@@ -17,6 +19,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
   navigationListOpen();
   contactsListOpen();
+  resizeWindow();
+  checkWindowWidth();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана

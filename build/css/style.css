@@ -1108,7 +1108,7 @@ ul {
 }
 
 .advantages {
-  padding: 120px 276px 120px 309px;
+  padding: 120px 276px 55px 309px;
 }
 
 .advantages__list {
@@ -1130,7 +1130,7 @@ ul {
   margin-bottom: 30px;
   background-color: inherit;
   position: relative;
-  border: 1px solid #EBEBEB;
+  border: 1px solid #ebebeb;
 }
 
 .advantages__item h3 {
@@ -1143,7 +1143,7 @@ ul {
 
 .advantages__item p {
   margin-top: 12px;
-  font-family: 'PT Mono';
+  font-family: "PT Mono", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1179,6 +1179,72 @@ ul {
 
 .advantages__item:hover svg {
   fill: #f2f5f7;
+}
+
+.about-company {
+  padding: 37px 276px 98px 309px;
+}
+
+.about-company__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.about-company__inner img {
+  width: 150px;
+  height: 320px;
+}
+
+.about-company__text-show {
+  display: none;
+}
+
+.about-company__text-show-desktop {
+  display: none;
+}
+
+.about-company__text-wrapper {
+  color: #041827;
+  padding: 0 32px 0 100px;
+}
+
+.about-company__text-wrapper h3 {
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: 400;
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.about-company__text-wrapper p {
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "PT Mono", sans-serif;
+  font-style: normal;
+  margin-top: 10px;
+  margin-bottom: 21px;
+}
+
+.about-company__show-more {
+  min-width: 180px;
+  min-height: 45px;
+  border: 1px solid #00b2ff;
+  border-radius: 3px;
+  background-color: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #00b2ff;
+  margin-top: 20px;
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
@@ -1368,7 +1434,7 @@ ul {
   }
 
   .advantages {
-    padding: 80px 0;
+    padding: 80px 0 48px;
   }
 
   .advantages__item {
@@ -1402,6 +1468,22 @@ ul {
 
   .advantages__item-cost p {
     margin-top: 1px;
+  }
+
+  .about-company {
+    padding: 0 0 79px 0;
+  }
+
+  .about-company__text-wrapper {
+    padding: 0 0 0 25px;
+  }
+
+  .about-company__text-wrapper p {
+    margin-bottom: 17px;
+  }
+
+  .about-company__show-more {
+    margin-top: 0;
   }
 }
 
@@ -1522,7 +1604,7 @@ ul {
     position: relative;
   }
 
-  .footer__contacts h2.footer__contacts-before--closed::before {
+  .footer__contacts h2.footer__contacts-before-closed::before {
     position: absolute;
     content: "";
     width: 15px;
@@ -1532,7 +1614,7 @@ ul {
     top: 5px;
   }
 
-  .footer__contacts h2.footer__contacts-before--closed::after {
+  .footer__contacts h2.footer__contacts-before-closed::after {
     position: absolute;
     content: "";
     width: 1px;
@@ -1613,7 +1695,7 @@ ul {
     position: relative;
   }
 
-  .footer__navigation h2.footer__navigation-before--closed::before {
+  .footer__navigation h2.footer__navigation-before-closed::before {
     position: absolute;
     content: "";
     width: 15px;
@@ -1623,7 +1705,7 @@ ul {
     top: 5px;
   }
 
-  .footer__navigation h2.footer__navigation-before--closed::after {
+  .footer__navigation h2.footer__navigation-before-closed::after {
     position: absolute;
     content: "";
     width: 1px;
@@ -1702,7 +1784,7 @@ ul {
   }
 
   .advantages {
-    padding: 50px 0;
+    padding: 50px 0 8px;
   }
 
   .advantages__item {
@@ -1739,6 +1821,35 @@ ul {
   .advantages__item-purveyor {
     margin-bottom: 30px;
     padding-bottom: 18px;
+  }
+
+  .about-company {
+    padding-bottom: 80px;
+  }
+
+  .about-company__inner img {
+    display: none;
+  }
+
+  .about-company__text-wrapper {
+    padding: 0;
+  }
+
+  .about-company__text-wrapper h3 {
+    font-size: 28px;
+    line-height: 140.62%;
+  }
+
+  .about-company__text-wrapper p {
+    font-size: 14px;
+    line-height: 134.4%;
+    margin-top: 13px;
+    margin-bottom: 17px;
+  }
+
+  .about-company__show-more {
+    min-width: 160px;
+    min-height: 35px;
   }
 }
 
