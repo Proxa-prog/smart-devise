@@ -1200,6 +1200,14 @@ ul {
   height: 320px;
 }
 
+.about-company__text-show {
+  display: none;
+}
+
+.about-company__text-show-desktop {
+  display: none;
+}
+
 .about-company__text-wrapper {
   color: #041827;
   padding: 0 32px 0 100px;
@@ -1837,10 +1845,6 @@ ul {
     line-height: 134.4%;
     margin-top: 13px;
     margin-bottom: 17px;
-  }
-
-  .about-company__text-wrapper p span {
-    display: none;
   }
 
   .about-company__show-more {
