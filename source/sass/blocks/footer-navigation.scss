@@ -142,6 +142,10 @@
   width: 220px;
   min-height: 35px;
 
+  a {
+    color: $color-text-opacity;
+  }
+
   @include vp-1023 {
     margin-bottom: 8px;
     min-height: 0;

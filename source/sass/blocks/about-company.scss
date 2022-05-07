@@ -22,8 +22,11 @@
     height: 320px;
   }
 
-  @include vp-1023 {
+  @include vp-1439 {
     width: 670px;
+  }
+
+  @include vp-1023 {
     padding-left: 0;
   }
 
@@ -93,6 +96,7 @@
 }
 
 .about-company__show-more {
+  cursor: pointer;
   min-width: 180px;
   min-height: 45px;
   border: 1px solid $color-deep-sky-blue;

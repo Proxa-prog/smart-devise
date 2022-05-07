@@ -60,14 +60,14 @@
       <section class="advantages">
         <div class="container">
           <ul class="advantages__list">
-            <li class="advantages__item advantages__item-terms">
+            <li class="advantages__item advantages__item-terms" tabindex="0">
               <div class="advantages__item-inner">
                 <svg class="advantages__stopwatch" width="35" viewBox="0 0 55 55" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="img/sprite/sprite.svg#stopwatch"></use>
                 </svg>
 
-                <h3>Оперативные сроки </h3>
+                <h3>Оперативные сроки</h3>
 
                 <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и
                   доставлять
@@ -75,7 +75,7 @@
               </div>
 
             </li>
-            <li class="advantages__item advantages__item-purveyor">
+            <li class="advantages__item advantages__item-purveyor" tabindex="0">
               <div class="advantages__item-inner">
                 <svg class="advantages__hired" width="35" viewBox="0 0 55 55" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -90,7 +90,7 @@
               </div>
 
             </li>
-            <li class="advantages__item advantages__item-confidentiality">
+            <li class="advantages__item advantages__item-confidentiality" tabindex="0">
               <div class="advantages__item-inner">
                 <svg class="advantages__detective" width="35" viewBox="0 0 55 55" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -104,7 +104,7 @@
               </div>
 
             </li>
-            <li class="advantages__item advantages__item-cost">
+            <li class="advantages__item advantages__item-cost" tabindex="0">
               <div class="advantages__item-inner">
                 <svg class="advantages__tag" width="35" viewBox="0 0 55 55" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -165,11 +165,15 @@
         <div class="container">
           <div class="products__inner">
 
-            <h3>Smart Device предлагает следующие товары и услуги</h3>
+            <h3 class="products__title-desktop">Smart Device предлагает следующие товары и услуги</h3>
+
+            <div class="products__title-inner">
+              <h3 class="products__title-mobile">Товары и услуги Smart Device</h3>
+            </div>
 
             <ul class="products__list">
               <li class="products__item">
-                <a>
+                <a href="#">
                   <picture>
                     <!-- 1x: 350px, 2x 700px -->
                     <source media="(min-width: 1024px)"
@@ -188,7 +192,7 @@
                 </a>
               </li>
               <li class="products__item">
-                <a>
+                <a href="#">
                   <picture>
                     <!-- 1x: 350px, 2x 700px -->
                     <source media="(min-width: 1024px)"
@@ -206,7 +210,7 @@
                   <button><span class="visually-hidden">Перейти</span></button>
                 </a></li>
               <li class="products__item">
-                <a>
+                <a href="#">
                   <picture>
                     <!-- 1x: 350px, 2x 700px -->
                     <source media="(min-width: 1024px)"
@@ -241,9 +245,9 @@
 
             <div class="footer__social-media">
               <ul class="footer__social-list">
-                <li class="footer__social-item footer__social-item-facebook"></li>
-                <li class="footer__social-item footer__social-item-ok"></li>
-                <li class="footer__social-item footer__social-item-vk"></li>
+                <li class="footer__social-item"><a href="#"><div class="footer__social-item-facebook"></div></a></li>
+                <li class="footer__social-item"><a href="#"><div class="footer__social-item-ok"></div></a></li>
+                <li class="footer__social-item"><a href="#"><div class="footer__social-item-vk"></div></a></li>
               </ul>
             </div>
           </div>
@@ -256,17 +260,17 @@
             <ul class="footer__navigation-list">
               <li>
                 <ul>
-                  <li class="footer__navigation-item">О Компании</li>
-                  <li class="footer__navigation-item">Продукты</li>
-                  <li class="footer__navigation-item">Производство печатных плат</li>
-                  <li class="footer__navigation-item">Монтаж печатных плат</li>
+                  <li class="footer__navigation-item"><a href="#" tabindex="0">О Компании</a></li>
+                  <li class="footer__navigation-item"><a href="#" tabindex="0">Продукты</a></li>
+                  <li class="footer__navigation-item"><a href="#" tabindex="0">Производство печатных плат</a></li>
+                  <li class="footer__navigation-item"><a href="#" tabindex="0">Монтаж печатных плат</a></li>
                 </ul>
               </li>
               <li>
                 <ul>
-                  <li class="footer__navigation-item">Комплектующие</li>
-                  <li class="footer__navigation-item">Доставка</li>
-                  <li class="footer__navigation-item">Контакты</li>
+                  <li class="footer__navigation-item"><a href="#" tabindex="0">Комплектующие</a></li>
+                  <li class="footer__navigation-item"><a href="#" tabindex="0">Доставка</a></li>
+                  <li class="footer__navigation-item"><a href="#" tabindex="0">Контакты</a></li>
                 </ul>
               </li>
             </ul>
@@ -278,10 +282,10 @@
             <button class="footer__contacts-button"><span class="visually-hidden">Подробнее</span></button>
 
             <ul class="footer__contacts-list">
-              <li class="footer-contacts-item">г. Мытищи, Олимпийский проспект, д.10</li>
-              <li class="footer-contacts-item">+7 (495) 589-40-50</li>
-              <li class="footer-contacts-item">+7 (925) 389-58-29</li>
-              <li class="footer-contacts-item">+7 (925) 364-78-13</li>
+              <li class="footer-contacts-item"><address>г. Мытищи, Олимпийский проспект, д.10</address></li>
+              <li class="footer-contacts-item"><a href="tel:+74955894050">+7 (495) 589-40-50</a></li>
+              <li class="footer-contacts-item"><a href="tel:+79253895829">+7 (925) 389-58-29</a></li>
+              <li class="footer-contacts-item"><a href="tel:+79253647813">+7 (925) 364-78-13</a></li>
             </ul>
           </div>
         </div>

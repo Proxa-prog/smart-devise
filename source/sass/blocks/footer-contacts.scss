@@ -2,8 +2,16 @@
   width: 315px;
   min-height: 130px;
   margin: 0 30px 30px 0;
-  color: $color-text-opacity;
   position: relative;
+  color: $color-text-opacity;
+
+  address {
+    font-style: normal;
+  }
+
+  a {
+    color: $color-text-opacity;
+  }
 
   h2 {
     color: $color-default-white;

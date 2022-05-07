@@ -64,7 +64,7 @@
     fill: $color-deep-sky-blue;
   }
 
-  &:hover {
+  &:hover, &:focus {
     background-color: $color-deep-sky-blue;
 
     h3 {
@@ -79,6 +79,7 @@
       fill: $color-alice-blue;
     }
   }
+
 
   @include vp-1023 {
     width: 320px;
