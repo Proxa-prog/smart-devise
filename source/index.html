@@ -51,8 +51,8 @@
 
             <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
 
-            <button class="intro__button" type="button"><span class="intro__button-desktop">Получить бесплатную
-                консультацию</span><span class="intro__button-mobile">Бесплатная консультация</span></button>
+            <a class="intro__button" href="#feedback-form-anchor" type="button"><span class="intro__button-desktop">Получить бесплатную
+                консультацию</span><span class="intro__button-mobile">Бесплатная консультация</span></a>
           </div>
         </div>
       </section>
@@ -123,7 +123,7 @@
 
       </section>
 
-      <section class="about-company">
+      <section class="about-company" id="about-company-anchor">
         <div class="container">
           <div class="about-company__inner">
             <img src="../img/2022.png" alt="2022 год" width="150" height="320">
@@ -161,7 +161,7 @@
 
       </section>
 
-      <section class="products">
+      <section class="products" id="products-anchor">
         <div class="container">
           <div class="products__inner">
 
@@ -172,7 +172,7 @@
             </div>
 
             <ul class="products__list">
-              <li class="products__item">
+              <li class="products__item" id="prodution-anchor">
                 <a href="#">
                   <picture>
                     <!-- 1x: 350px, 2x 700px -->
@@ -188,10 +188,10 @@
 
                   <p>Производство печатных плат</p>
 
-                  <button><span class="visually-hidden">Перейти</span></button>
+                  <div></div>
                 </a>
               </li>
-              <li class="products__item">
+              <li class="products__item" id="mounting-anchor">
                 <a href="#">
                   <picture>
                     <!-- 1x: 350px, 2x 700px -->
@@ -207,9 +207,9 @@
 
                   <p>Монтаж печатных плат</p>
 
-                  <button><span class="visually-hidden">Перейти</span></button>
+                  <div></div>
                 </a></li>
-              <li class="products__item">
+              <li class="products__item" id="accessories-anchor">
                 <a href="#">
                   <picture>
                     <!-- 1x: 350px, 2x 700px -->
@@ -225,12 +225,40 @@
 
                   <p>Комплектующие для светотехники</p>
 
-                  <button><span class="visually-hidden">Перейти</span></button>
+                  <div></div>
                 </a>
               </li>
             </ul>
           </div>
         </div>
+      </section>
+
+      <section class="feedback-form" id="feedback-form-anchor">
+        <div class="feedback-form__decorative-triangel"></div>
+          <div class="container">
+            <div class="feedback-form__inner">
+              <form class="feedback-form__form" action="#" method="post">
+                <h3>Остались вопросы? Задайте их нам!</h3>
+
+                <p>Мы проконсультируем Вас бесплатно</p>
+
+                <div class="feedback-form__input-wrapper-left">
+                  <input type="text" placeholder="Имя">
+                </div>
+
+                <div class="feedback-form__input-wrapper-right">
+                  <input type="tel" name="tel" placeholder="Телефон">
+                </div>
+
+                <textarea name="text" cols="80" rows="6" placeholder="Ваш вопрос"></textarea>
+
+                <button type="submit">Задать вопрос</button>
+
+                <input type="checkbox" id="agreement">
+                <label for="agreement">Я согласен на обработку  персональных данных</label>
+              </form>
+            </div>
+          </div>
       </section>
 
     </main>
@@ -257,31 +285,31 @@
 
             <button class="footer__navigation-button"><span class="visually-hidden">Подробнее</span></button>
 
-            <ul class="footer__navigation-list">
+            <ul class="footer__navigation-list footer__navigation-list--open">
               <li>
                 <ul>
-                  <li class="footer__navigation-item"><a href="#" tabindex="0">О Компании</a></li>
-                  <li class="footer__navigation-item"><a href="#" tabindex="0">Продукты</a></li>
-                  <li class="footer__navigation-item"><a href="#" tabindex="0">Производство печатных плат</a></li>
-                  <li class="footer__navigation-item"><a href="#" tabindex="0">Монтаж печатных плат</a></li>
+                  <li class="footer__navigation-item"><a href="#about-company-anchor" tabindex="0">О Компании</a></li>
+                  <li class="footer__navigation-item"><a href="#products-anchor" tabindex="0">Продукты</a></li>
+                  <li class="footer__navigation-item"><a href="#prodution-anchor" tabindex="0">Производство печатных плат</a></li>
+                  <li class="footer__navigation-item"><a href="#mounting-anchor" tabindex="0">Монтаж печатных плат</a></li>
                 </ul>
               </li>
               <li>
                 <ul>
-                  <li class="footer__navigation-item"><a href="#" tabindex="0">Комплектующие</a></li>
+                  <li class="footer__navigation-item"><a href="#accessories-anchor" tabindex="0">Комплектующие</a></li>
                   <li class="footer__navigation-item"><a href="#" tabindex="0">Доставка</a></li>
-                  <li class="footer__navigation-item"><a href="#" tabindex="0">Контакты</a></li>
+                  <li class="footer__navigation-item"><a href="#contacts-anchor" tabindex="0">Контакты</a></li>
                 </ul>
               </li>
             </ul>
           </div>
 
-          <div class="footer__contacts">
+          <div class="footer__contacts" id="contacts-anchor">
             <h2 class="footer__contacts-before-closed">Наш офис</h2>
 
             <button class="footer__contacts-button"><span class="visually-hidden">Подробнее</span></button>
 
-            <ul class="footer__contacts-list">
+            <ul class="footer__contacts-list footer__contacts-list--open">
               <li class="footer-contacts-item"><address>г. Мытищи, Олимпийский проспект, д.10</address></li>
               <li class="footer-contacts-item"><a href="tel:+74955894050">+7 (495) 589-40-50</a></li>
               <li class="footer-contacts-item"><a href="tel:+79253895829">+7 (925) 389-58-29</a></li>

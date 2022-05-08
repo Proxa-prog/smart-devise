@@ -4,6 +4,8 @@ import navigationListOpen from './modules/navigation';
 import contactsListOpen from './modules/contacts';
 import resizeWindow from './modules/resize';
 import checkWindowWidth from './modules/check-window-width';
+import smoothScroll from './modules/smooth-scroll';
+import jsOn from './modules/js-on';
 
 // ---------------------------------
 
@@ -16,11 +18,12 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Modules
   // ---------------------------------
-
+  jsOn();
   navigationListOpen();
   contactsListOpen();
   resizeWindow();
   checkWindowWidth();
+  smoothScroll();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
