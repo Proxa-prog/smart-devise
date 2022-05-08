@@ -55,7 +55,7 @@
     font-size: 22px;
     line-height: 155%;
     width: 685px;
-    margin-bottom: 45px;
+    margin-bottom: 59px;
   }
 
   @include vp-1439 {
@@ -74,7 +74,7 @@
     p {
       width: 100%;
       margin-top: -11px;
-      margin-bottom: 58px;
+      margin-bottom: 73px;
     }
   }
 
@@ -91,7 +91,7 @@
       font-size: 14px;
       line-height: 155%;
       margin-top: 7px;
-      margin-bottom: 44px;
+      margin-bottom: 53px;
     }
   }
 }
@@ -110,6 +110,7 @@
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  padding: 15px 25px;
 
   .intro__button-mobile {
     display: none;
@@ -125,6 +126,7 @@
     margin-left: 0;
     font-size: 14px;
     line-height: 16px;
+    padding: 11px 36px;
 
     .intro__button-desktop {
       display: none;

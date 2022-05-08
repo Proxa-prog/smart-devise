@@ -64,7 +64,8 @@
     fill: $color-deep-sky-blue;
   }
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     background-color: $color-deep-sky-blue;
 
     h3 {

@@ -1104,7 +1104,7 @@ ul {
   font-size: 22px;
   line-height: 155%;
   width: 685px;
-  margin-bottom: 45px;
+  margin-bottom: 59px;
 }
 
 .intro__button {
@@ -1121,6 +1121,7 @@ ul {
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  padding: 15px 25px;
 }
 
 .intro__button .intro__button-mobile {
@@ -1328,14 +1329,14 @@ ul {
   color: #ffffff;
 }
 
-.products__item button {
+.products__item div {
   cursor: pointer;
   position: absolute;
   border: none;
   width: 60px;
   height: 60px;
   background-color: #00b2ff;
-  border-radius: 3px 0px 0px 0px;
+  border-radius: 3px 0 0 0;
   right: 0;
   bottom: 0;
 }
@@ -1347,7 +1348,7 @@ ul {
   height: 2px;
   background-color: #ffffff;
   right: 24px;
-  bottom: 29px;
+  bottom: 28px;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
@@ -1361,7 +1362,7 @@ ul {
   height: 2px;
   background-color: #ffffff;
   right: 24px;
-  bottom: 24px;
+  bottom: 22px;
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
@@ -1370,6 +1371,183 @@ ul {
 
 .products__title-mobile {
   display: none;
+}
+
+.feedback-form {
+  background-color: #00b2ff;
+  background-size: cover;
+}
+
+.feedback-form__inner {
+  width: 1260px;
+  padding: 170px 0 247px;
+  margin: 0 auto;
+}
+
+.feedback-form__form {
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  width: 615px;
+  margin-left: auto;
+  position: relative;
+}
+
+.feedback-form__form h3 {
+  margin: 0;
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.feedback-form__form p {
+  font-family: "PT Mono", sans-serif;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 32px;
+}
+
+.feedback-form__form input {
+  color: #ffffff;
+  font-family: "PT Mono", sans-serif;
+  width: 275px;
+  padding: 15px;
+  background: rgba(4, 20, 39, 0.15);
+  border-radius: 3px;
+  border: none;
+  margin-bottom: 27px;
+  margin-right: 30px;
+}
+
+.feedback-form__form input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.feedback-form__form input::-moz-placeholder {
+  color: #ffffff;
+}
+
+.feedback-form__form input:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.feedback-form__form input::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.feedback-form__form input::placeholder {
+  color: #ffffff;
+}
+
+.feedback-form__form input[type="checkbox"] {
+  opacity: 0;
+  width: 15px;
+  height: 15px;
+  margin: 0;
+  margin-left: 55px;
+  margin-right: 12px;
+  margin-top: 23px;
+}
+
+.feedback-form__form input[type="checkbox"]:focus + label::before {
+  border: 4px solid #f2f5f7;
+}
+
+.feedback-form__form label {
+  font-family: "PT Mono", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  opacity: 0.8;
+  width: 234px;
+  margin-top: 16px;
+  position: relative;
+}
+
+.feedback-form__form label::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #ffffff;
+  opacity: 0.8;
+  left: -28px;
+  top: 6px;
+}
+
+.feedback-form__form input[type="checkbox"]:checked + label::after {
+  content: "";
+  position: absolute;
+  background-image: url("../../img/svg/check-mark.svg");
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 15px;
+  opacity: 0.8;
+  left: -25px;
+  top: 10px;
+}
+
+.feedback-form__form textarea {
+  color: #ffffff;
+  font-family: "PT Mono", sans-serif;
+  width: 580px;
+  padding: 25px 15px;
+  background: rgba(4, 20, 39, 0.15);
+  border-radius: 3px;
+  border: none;
+  margin-bottom: 26px;
+}
+
+.feedback-form__form textarea::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.feedback-form__form textarea::-moz-placeholder {
+  color: #ffffff;
+}
+
+.feedback-form__form textarea:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.feedback-form__form textarea::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.feedback-form__form textarea::placeholder {
+  color: #ffffff;
+}
+
+.feedback-form__form button {
+  width: 265px;
+  min-height: 45px;
+  padding: 15px 25px;
+  background: #041427;
+  border-radius: 3px;
+  color: #ffffff;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: none;
+}
+
+.feedback-form__form::before {
+  content: "";
+  position: absolute;
+  width: 510px;
+  height: 285px;
+  background-image: url("../../img/paper_airplane.png");
+  background-repeat: no-repeat;
+  left: -626px;
+  top: 79px;
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
@@ -1454,7 +1632,7 @@ ul {
   .intro__main-screen p {
     width: 100%;
     margin-top: -11px;
-    margin-bottom: 58px;
+    margin-bottom: 73px;
   }
 
   .intro__button {
@@ -1468,6 +1646,18 @@ ul {
   .products__inner {
     width: 100%;
   }
+
+  .feedback-form__inner {
+    width: auto;
+  }
+
+  .feedback-form__form {
+    margin: 0 auto;
+  }
+
+  .feedback-form__form::before {
+    background-image: none;
+  }
 }
 
 @media (max-width: 1023px) {
@@ -1476,6 +1666,7 @@ ul {
   }
 
   .header {
+    position: static;
     min-width: 770px;
   }
 
@@ -1643,7 +1834,7 @@ ul {
   }
 
   .products__inner {
-    padding: 57px 0 140px 0;
+    padding: 57px 0 42px 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1682,6 +1873,54 @@ ul {
   .products__item::after {
     height: 1px;
     bottom: 26px;
+  }
+
+  .feedback-form__inner {
+    padding: 45px 0 109px;
+  }
+
+  .feedback-form__form {
+    margin: 0;
+    width: 100%;
+  }
+
+  .feedback-form__form p {
+    width: 100%;
+    margin-bottom: 21px;
+  }
+
+  .feedback-form__form input {
+    width: 320px;
+    margin-right: 0;
+  }
+
+  .feedback-form__form textarea {
+    width: 100%;
+  }
+
+  .feedback-form__form input[type="checkbox"] {
+    margin: 13px 13px 0 83px;
+  }
+
+  .feedback-form__form label {
+    margin-top: 10px;
+  }
+
+  .feedback-form__input-wrapper-left {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .feedback-form__input-wrapper-right {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
   }
 }
 
@@ -1962,7 +2201,7 @@ ul {
     font-size: 14px;
     line-height: 155%;
     margin-top: 7px;
-    margin-bottom: 44px;
+    margin-bottom: 53px;
   }
 
   .intro__button {
@@ -1971,6 +2210,7 @@ ul {
     margin-left: 0;
     font-size: 14px;
     line-height: 16px;
+    padding: 11px 36px;
   }
 
   .intro__button .intro__button-desktop {
@@ -2061,6 +2301,7 @@ ul {
 
   .products__inner {
     padding-top: 47px;
+    padding-bottom: 53px;
   }
 
   .products__inner h3 {
@@ -2110,6 +2351,56 @@ ul {
 
   .products__title-mobile {
     display: inline;
+  }
+
+  .feedback-form__inner {
+    padding-bottom: 89px;
+  }
+
+  .feedback-form__form h3 {
+    font-size: 30px;
+    line-height: 140.62%;
+  }
+
+  .feedback-form__form p {
+    font-size: 14px;
+    line-height: 134.4%;
+    margin-bottom: 35px;
+  }
+
+  .feedback-form__form input {
+    width: 100%;
+    margin-bottom: 21px;
+  }
+
+  .feedback-form__form textarea {
+    margin-bottom: 50px;
+  }
+
+  .feedback-form__form label {
+    margin-top: 20px;
+  }
+
+  .feedback-form__form input[type="checkbox"] {
+    margin-left: 4px;
+  }
+
+  .feedback-form__form button {
+    width: 100%;
+  }
+
+  .feedback-form__input-wrapper-left {
+    width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .feedback-form__input-wrapper-right {
+    width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 }
 

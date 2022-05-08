@@ -8,6 +8,7 @@
   min-width: 1024px;
 
   @include vp-1023 {
+    position: static;
     min-width: 770px;
   }
 
