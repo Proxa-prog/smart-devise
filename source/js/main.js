@@ -6,6 +6,8 @@ import resizeWindow from './modules/resize';
 import checkWindowWidth from './modules/check-window-width';
 import smoothScroll from './modules/smooth-scroll';
 import jsOn from './modules/js-on';
+import modalClose from './modules/modal-close';
+import modalOpen from './modules/modal-open';
 
 // ---------------------------------
 
@@ -24,6 +26,8 @@ window.addEventListener('DOMContentLoaded', () => {
   resizeWindow();
   checkWindowWidth();
   smoothScroll();
+  modalClose();
+  modalOpen();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана

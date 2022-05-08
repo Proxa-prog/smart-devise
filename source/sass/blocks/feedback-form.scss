@@ -1,7 +1,6 @@
 .feedback-form {
   background-color: $color-deep-sky-blue;
   background-size: cover;
-
   // background-image: url("../../img/svg/triangle.svg");
   // background-repeat: no-repeat;
   // background-position: 0 74%;
@@ -10,7 +9,7 @@
   // background-size: 71% 129%;
   // background-position: -93px,34%;
   // background-repeat: no-repeat;
-  // background: linear-gradient(139deg, $color-сerulean 34%, $color-deep-sky-blue 34%);
+  background: linear-gradient(139deg, $color-сerulean 34%, $color-deep-sky-blue 34%);
 }
 
 // .feedback-form__decorative-triangel {
