@@ -1,4 +1,5 @@
 .feedback-form {
+  background: linear-gradient(139deg, $color-сerulean 34%, $color-deep-sky-blue 34%);
   background-color: $color-deep-sky-blue;
   background-size: cover;
   // background-image: url("../../img/svg/triangle.svg");
@@ -9,7 +10,6 @@
   // background-size: 71% 129%;
   // background-position: -93px,34%;
   // background-repeat: no-repeat;
-  background: linear-gradient(139deg, $color-сerulean 34%, $color-deep-sky-blue 34%);
 }
 
 // .feedback-form__decorative-triangel {
@@ -33,7 +33,7 @@
   }
 
   @include vp-1023 {
-    padding: 45px 0 109px;
+    padding: 45px 0 121px;
   }
 
   @include vp-767 {
@@ -123,7 +123,7 @@
     &::after {
       content: "";
       position: absolute;
-      background-image: url("../../img/svg/check-mark.svg");
+      background-image: url("../img/svg/check-mark.svg");
       background-repeat: no-repeat;
       width: 15px;
       height: 15px;
@@ -165,7 +165,7 @@
     position: absolute;
     width: 510px;
     height: 285px;
-    background-image: url("../../img/paper_airplane.png");
+    background-image: url("../img/paper_airplane.png");
     background-repeat: no-repeat;
     left: -626px;
     top: 79px;

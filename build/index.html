@@ -36,7 +36,7 @@
               <li class="header__item header__item-phone"><a href="tel:++74950005252">+7 (495) 000 52 52</a></li>
             </ul>
 
-            <button class="header__button" type="button">Заказать звонок</button>
+            <a class="header__button" href="#modal-form">Заказать звонок</a>
           </nav>
         </div>
       </div>
@@ -176,6 +176,15 @@
                 <a href="#">
                   <picture>
                     <!-- 1x: 350px, 2x 700px -->
+                    <source type="image/webp" media="(min-width: 1024px)"
+                      srcset="img/background_prodution_desktop.webp 1x, img/background_prodution_desktop@2x.webp 2x">
+                    <!-- 1x: 670px, 2x 1340px -->
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/background_prodution_tablet.webp 1x, img/background_prodution_tablet@2x.webp 2x">
+                    <!-- 1x: 270px, 2x 540px -->
+                    <source type="image/webp" srcset="img/background_prodution_mobile.webp 1x, img/background_prodution_mobile@2x.webp 2x">
+
+                    <!-- 1x: 350px, 2x 700px -->
                     <source media="(min-width: 1024px)"
                       srcset="img/background_prodution_desktop.jpg 1x, img/background_prodution_desktop@2x.jpg 2x">
                     <!-- 1x: 670px, 2x 1340px -->
@@ -195,6 +204,15 @@
                 <a href="#">
                   <picture>
                     <!-- 1x: 350px, 2x 700px -->
+                    <source type="image/webp" media="(min-width: 1024px)"
+                      srcset="img/background_mounting_desktop.webp 1x, img/background_mounting_desktop@2x.webp 2x">
+                    <!-- 1x: 670px, 2x 1340px -->
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/background_mounting_tablet.webp 1x, img/background_mounting_tablet@2x.webp 2x">
+                    <!-- 1x: 270px, 2x 540px -->
+                    <source type="image/webp" srcset="img/background_mounting_mobile.webp 1x, img/background_mounting_desktop@2x.webp 2x">
+
+                    <!-- 1x: 350px, 2x 700px -->
                     <source media="(min-width: 1024px)"
                       srcset="img/background_mounting_desktop.jpg 1x, img/background_mounting_desktop@2x.jpg 2x">
                     <!-- 1x: 670px, 2x 1340px -->
@@ -212,6 +230,15 @@
               <li class="products__item" id="accessories-anchor">
                 <a href="#">
                   <picture>
+                    <!-- 1x: 350px, 2x 700px -->
+                    <source type="image/webp" media="(min-width: 1024px)"
+                      srcset="img/background_accessories_desktop.webp 1x, img/background_accessories_desktop@2x.webp 2x">
+                    <!-- 1x: 670px, 2x 1340px -->
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/background_accessories_tablet.webp 1x, img/background_accessories_tablet@2x.webp 2x">
+                    <!-- 1x: 270px, 2x 540px -->
+                    <source type="image/webp" srcset="img/background_accessories_mobile.webp 1x, img/background_accessories_mobile@2x.webp 2x">
+
                     <!-- 1x: 350px, 2x 700px -->
                     <source media="(min-width: 1024px)"
                       srcset="img/background_accessories_desktop.jpg 1x, img/background_accessories_desktop@2x.jpg 2x">
@@ -247,7 +274,7 @@
                 </div>
 
                 <div class="feedback-form__input-wrapper-right">
-                  <input type="tel" name="tel" placeholder="Телефон">
+                  <input type="tel" name="tel" placeholder="Телефон" id="phone-maks">
                 </div>
 
                 <textarea name="text" cols="80" rows="6" placeholder="Ваш вопрос"></textarea>
@@ -321,7 +348,7 @@
     </footer>
 
     <div class="modal-feedback">
-      <form class="modal-feedback__form" action="#" method="post">
+      <form class="modal-feedback__form" action="#" method="post" id="modal-form">
         <button class="modal-feedback__button-close" type="button" tabindex="0"><span class="visually-hidden">Закрыть</span></button>
         <h3>Закажите звонок</h3>
 
@@ -329,7 +356,7 @@
 
         <input class="modal-feedback__name" type="text" placeholder="Имя" required>
 
-        <input type="tel" name="tel" placeholder="Телефон" required>
+        <input type="tel" name="tel" placeholder="Телефон" id="phone-mask-modal" required>
 
         <textarea name="text" cols="80" rows="6" placeholder="Ваш вопрос"></textarea>
 
@@ -372,6 +399,7 @@
       </div>
     </div> -->
 
+  <script src="https://unpkg.com/imask"></script>
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>

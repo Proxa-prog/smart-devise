@@ -3,7 +3,7 @@ const modalFeedback = document.querySelector('.modal-feedback');
 const isOpen = document.querySelector('.is-open');
 
 const modalClose = () => {
-  isOpen.addEventListener('click', (evt) => {
+  isOpen.addEventListener('click', () => {
     isOpen.style.display = 'none';
     modalFeedback.style.display = 'none';
   });
@@ -12,6 +12,6 @@ const modalClose = () => {
     isOpen.style.display = 'none';
     modalFeedback.style.display = 'none';
   });
-}
+};
 
 export default modalClose;
