@@ -6,9 +6,9 @@ const inputName = document.querySelector('.modal-feedback__name');
 const modalOpen = () => {
   buttonOpen.addEventListener('click', () => {
     isOpen.style.display = 'block';
-    inputName.focus();
     modalFeedback.style.display = 'block';
+    inputName.focus();
   });
-}
+};
 
 export default modalOpen;
