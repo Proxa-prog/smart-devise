@@ -1,27 +1,11 @@
 .feedback-form {
   background: linear-gradient(139deg, $color-сerulean 34%, $color-deep-sky-blue 34%);
-  background-color: $color-deep-sky-blue;
   background-size: cover;
-  // background-image: url("../../img/svg/triangle.svg");
-  // background-repeat: no-repeat;
-  // background-position: 0 74%;
-  // position: relative;
-  // background-image: url("../../img/svg/triangel.svg");
-  // background-size: 71% 129%;
-  // background-position: -93px,34%;
-  // background-repeat: no-repeat;
-}
 
-// .feedback-form__decorative-triangel {
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   width: 50%;
-//   height: 100%;
-//   background: url("../../img/svg/triangel.svg");
-//   background-position: center;
-//   background-repeat: no-repeat;
-// }
+  @include vp-1439 {
+    background: linear-gradient(139deg, $color-deep-sky-blue 34%, $color-deep-sky-blue 34%);
+  }
+}
 
 .feedback-form__inner {
   width: 1260px;
