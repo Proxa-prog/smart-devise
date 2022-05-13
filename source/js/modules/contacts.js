@@ -9,9 +9,11 @@ const navigationListTitle = footerNavigation.querySelector('h2');
 
 const contactsListOpen = () => {
   contactsButton.addEventListener('click', () => {
-    if (navigationList.classList.contains('footer__navigation-list--open')) {
-      navigationList.classList.remove('footer__navigation-list--open');
-      navigationListTitle.classList.remove('footer__navigation-before--open');
+    if (navigationList) {
+      if (navigationList.classList.contains('footer__navigation-list--open')) {
+        navigationList.classList.remove('footer__navigation-list--open');
+        navigationListTitle.classList.remove('footer__navigation-before--open');
+      }
     }
 
     contactsList.classList.toggle('footer__contacts-list--open');
