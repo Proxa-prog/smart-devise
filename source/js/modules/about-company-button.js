@@ -14,10 +14,13 @@ const aboutCompanyButton = () => {
       for (let i = 0; i < textHidden.length; i++) {
         textHidden[i].classList.toggle('about-company__text-show');
         textHidden[0].classList.toggle('about-company__text-show');
+        textHidden[i].classList.toggle('about-company__text-hidden');
+        textHidden[0].classList.toggle('about-company__text-hidden');
       }
     } else {
       for (let i = 0; i < textHidden.length; i++) {
         textHidden[i].classList.toggle('about-company__text-show');
+        textHidden[i].classList.toggle('about-company__text-hidden');
       }
     }
   });
