@@ -70,6 +70,10 @@
   margin-right: 85px;
   margin-bottom: 30px;
 
+  &:hover {
+    outline: 2px solid $color-default-white;
+  }
+
   img {
     width: 350px;
     height: 650px;
@@ -171,6 +175,11 @@
       bottom: 17px;
       right: 15px;
       width: 3.62px;
+    }
+
+    div {
+      width: 39px;
+      height: 40px;
     }
   }
 }

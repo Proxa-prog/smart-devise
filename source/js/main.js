@@ -9,6 +9,7 @@ import jsOn from './modules/js-on';
 import modalClose from './modules/modal-close';
 import modalOpen from './modules/modal-open';
 import './modules/mask';
+import './modules/inert';
 
 // ---------------------------------
 
