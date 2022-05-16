@@ -28,8 +28,8 @@
               <use xlink:href="img/sprite/sprite.svg#website-logo"></use>
             </svg>
             <ul class="header__list">
-              <li class="header__item header__item-mail"><a href="mailto:info@sd.ru">info@sd.ru</a></li>
-              <li class="header__item header__item-phone"><a href="tel:++74950005252">+7 (495) 000 52 52</a></li>
+              <li class="header__item header__item-mail"><a href="mailto:info@sd.ru"><span>info@sd.ru</span></a></li>
+              <li class="header__item header__item-phone"><a href="tel:++74950005252"><span>+7 (495) 000 52 52</span></a></li>
             </ul>
             <a class="header__button" href="#modal-form">Заказать звонок</a>
           </nav>
@@ -230,10 +230,10 @@
               <h3>Остались вопросы? Задайте их нам!</h3>
               <p>Мы проконсультируем Вас бесплатно</p>
               <div class="feedback-form__input-wrapper-left">
-                <input type="text" placeholder="Имя">
+                <input type="text" placeholder="Имя" required>
               </div>
               <div class="feedback-form__input-wrapper-right">
-                <input type="tel" name="tel" placeholder="Телефон" id="phone-maks">
+                <input type="tel" name="tel" placeholder="Телефон" id="phone-maks" required>
               </div>
               <textarea name="text" cols="80" rows="6" placeholder="Ваш вопрос"></textarea>
               <button type="submit">Задать вопрос</button>
@@ -304,21 +304,22 @@
         </div>
       </div>
     </footer>
-    <div class="modal-feedback">
-      <form class="modal-feedback__form" action="#" method="post" id="modal-form">
-        <button class="modal-feedback__button-close" type="button" tabindex="0"><span
-            class="visually-hidden">Закрыть</span></button>
-        <h3>Закажите звонок</h3>
-        <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-        <input class="modal-feedback__name" type="text" placeholder="Имя" required>
-        <input type="tel" name="tel" placeholder="Телефон" id="phone-mask-modal" required>
-        <textarea name="text" cols="80" rows="6" placeholder="Ваш вопрос"></textarea>
-        <button type="submit">Отправить</button>
-        <input type="checkbox" id="modal-agreement" required>
-        <label for="modal-agreement">Я согласен на обработку персональных данных</label>
-      </form>
-    </div>
-    <div class="is-open"></div>
+  </div>
+
+  <div class="is-open"></div>
+  <div class="modal-feedback">
+    <form class="modal-feedback__form" action="#" method="post" id="modal-form">
+      <button class="modal-feedback__button-close" type="button" tabindex="0"><span
+          class="visually-hidden">Закрыть</span></button>
+      <h3>Закажите звонок</h3>
+      <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+      <input class="modal-feedback__name" type="text" placeholder="Имя" required>
+      <input type="tel" name="tel" placeholder="Телефон" id="phone-mask-modal" required>
+      <textarea name="text" cols="80" rows="6" placeholder="Ваш вопрос"></textarea>
+      <button type="submit">Отправить</button>
+      <input type="checkbox" id="modal-agreement" required>
+      <label for="modal-agreement">Я согласен на обработку персональных данных</label>
+    </form>
   </div>
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
