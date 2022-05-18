@@ -52,7 +52,7 @@
       <section class="advantages">
         <div class="container">
           <ul class="advantages__list">
-            <li class="advantages__item advantages__item-terms" tabindex="0">
+            <li class="advantages__item advantages__item-terms">
               <div class="advantages__item-inner">
                 <svg class="advantages__stopwatch" width="35" viewBox="0 0 55 55" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -64,7 +64,7 @@
                   заказы плат и комплектующих в самые короткие сроки</p>
               </div>
             </li>
-            <li class="advantages__item advantages__item-purveyor" tabindex="0">
+            <li class="advantages__item advantages__item-purveyor">
               <div class="advantages__item-inner">
                 <svg class="advantages__hired" width="35" viewBox="0 0 55 55" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -76,7 +76,7 @@
                 </p>
               </div>
             </li>
-            <li class="advantages__item advantages__item-confidentiality" tabindex="0">
+            <li class="advantages__item advantages__item-confidentiality">
               <div class="advantages__item-inner">
                 <svg class="advantages__detective" width="35" viewBox="0 0 55 55" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -87,7 +87,7 @@
                 </p>
               </div>
             </li>
-            <li class="advantages__item advantages__item-cost" tabindex="0">
+            <li class="advantages__item advantages__item-cost">
               <div class="advantages__item-inner">
                 <svg class="advantages__tag" width="35" viewBox="0 0 55 55" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -105,15 +105,12 @@
         <div class="container">
           <div class="about-company__inner">
             <!-- 1x: 300px, 2x 600px -->
-            <img src="../img/2022.png" alt="2022 год" width="150" height="320">
+            <img src="img/2022.png" alt="2022 год" width="150" height="320">
             <div class="about-company__text-wrapper">
               <h3>О компании</h3>
-              <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с
-                1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.
-              </p>
+              <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с&nbsp;1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
               <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
-                <span class="about-company__text-show">Печатные платы и комплектующие Service Devices применяются на
-                  предприятиях Российских Железных
+                <span class="about-company__text-show">Печатные платы и комплектующие Service Devices применяются на&nbsp;предприятиях Российских Железных
                   Дорог (РЖД),
                   РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители
                   светотехники России.</span>
@@ -121,7 +118,7 @@
               <p><span class="about-company__text-show">Smart Device - это команда профессионалов. Через нас прошло
                   более 1 000 000 клиентов, 70% из
                   которых
-                  продолжают сотрудничество по сей день. На данный момент насчитывается более 14 офисов по всей стране и
+                  продолжают сотрудничество по&nbsp;сей день. На&nbsp;данный момент насчитывается более 14 офисов по&nbsp;всей стране и
                   20 городов присутствия.</span></p>
               <p><span class="about-company__text-show">Мы стремимся к постоянному развитию и повышению уровня качества
                   продукции, производимой внутри
@@ -233,11 +230,11 @@
                 <input type="text" placeholder="Имя" required>
               </div>
               <div class="feedback-form__input-wrapper-right">
-                <input type="tel" name="tel" placeholder="Телефон" id="phone-maks" required>
+                <input type="tel" name="tel" placeholder="Телефон" id="phone-maks" required  minlength="16" maxlength="16">
               </div>
               <textarea name="text" cols="80" rows="6" placeholder="Ваш вопрос"></textarea>
               <button type="submit">Задать вопрос</button>
-              <input type="checkbox" id="agreement">
+              <input type="checkbox" id="agreement" required>
               <label for="agreement">Я согласен на обработку персональных данных</label>
             </form>
           </div>
@@ -314,7 +311,7 @@
       <h3>Закажите звонок</h3>
       <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
       <input class="modal-feedback__name" type="text" placeholder="Имя" required>
-      <input type="tel" name="tel" placeholder="Телефон" id="phone-mask-modal" required>
+      <input type="tel" name="tel" placeholder="Телефон" id="phone-mask-modal" minlength="16" maxlength="16" required>
       <textarea name="text" cols="80" rows="6" placeholder="Ваш вопрос"></textarea>
       <button type="submit">Отправить</button>
       <input type="checkbox" id="modal-agreement" required>

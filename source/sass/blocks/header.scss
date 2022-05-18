@@ -38,14 +38,16 @@
   flex-wrap: wrap;
   align-items: center;
   margin: 0 auto;
+  padding: 0 61px 0 0;
 
   @include vp-1439 {
-    width: auto;
-    min-width: 668px;
-    justify-content: center;
+    min-width: 961px;
+    width: 85vw
   }
 
   @include vp-1023 {
+    min-width: 269px;
+    padding: 0;
     width: auto;
   }
 
@@ -60,14 +62,14 @@
   width: 502px;
   margin: 0;
   padding: 0;
-  margin-left: 146px;
+  margin-left: auto;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 
   @include vp-1439 {
-    margin-left: 40px;
+
   }
 
   @include vp-1023 {
@@ -85,6 +87,7 @@
 .header__item {
   min-width: 251px;
   padding-bottom: 12px;
+  padding-left: 20px;
 
   a {
     font-family: "PT Mono", sans-serif;
@@ -101,6 +104,7 @@
     height: 40px;
     margin-left: 17px;
     padding-bottom: 0;
+    padding-left: 0;
   }
 }
 
@@ -108,8 +112,9 @@
   cursor: pointer;
   min-width: 160px;
   min-height: 40px;
-  margin-bottom: 10px;
-  margin-left: 139px;
+  margin-top: 15px;
+  margin-bottom: auto;
+  margin-left: auto;
   padding: 12px 15px;
   color: $color-text-white;
   text-transform: uppercase;
@@ -122,9 +127,6 @@
   border-radius: 3px;
   background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
 
-  @include vp-1439 {
-    margin-left: 0;
-  }
 
   @include vp-1023 {
     display: none;
@@ -135,7 +137,7 @@
   position: relative;
 
   a {
-    padding-left: 50px;
+    padding-left: 30px;
 
     &::before {
       position: absolute;
@@ -174,7 +176,7 @@
   position: relative;
 
   a {
-    padding-left: 50px;
+    padding-left: 30px;
 
     &::before {
       position: absolute;
@@ -210,6 +212,9 @@
 }
 
 .header__logo-desktop {
+  margin-top: 12px;
+  margin-bottom: auto;
+
   @include vp-767 {
     display: none;
   }

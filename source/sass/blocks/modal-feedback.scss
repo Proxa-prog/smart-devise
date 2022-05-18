@@ -142,6 +142,11 @@
     opacity: 0;
     right: 12px;
     top: 13px;
+
+    &:focus {
+      background-color: inherit;
+      opacity: 1;
+    }
   }
 
   &::before {
