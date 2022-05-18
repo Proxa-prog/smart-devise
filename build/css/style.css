@@ -810,13 +810,14 @@ ul {
   -ms-flex-align: center;
   align-items: center;
   margin: 0 auto;
+  padding: 0 61px 0 0;
 }
 
 .header__list {
   width: 502px;
   margin: 0;
   padding: 0;
-  margin-left: 146px;
+  margin-left: auto;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -831,6 +832,7 @@ ul {
 .header__item {
   min-width: 251px;
   padding-bottom: 12px;
+  padding-left: 20px;
 }
 
 .header__item a {
@@ -846,8 +848,9 @@ ul {
   cursor: pointer;
   min-width: 160px;
   min-height: 40px;
-  margin-bottom: 10px;
-  margin-left: 139px;
+  margin-top: 15px;
+  margin-bottom: auto;
+  margin-left: auto;
   padding: 12px 15px;
   color: #f2f5f7;
   text-transform: uppercase;
@@ -868,7 +871,7 @@ ul {
 }
 
 .header__item-mail a {
-  padding-left: 50px;
+  padding-left: 30px;
 }
 
 .header__item-mail a::before {
@@ -887,7 +890,7 @@ ul {
 }
 
 .header__item-phone a {
-  padding-left: 50px;
+  padding-left: 30px;
 }
 
 .header__item-phone a::before {
@@ -899,6 +902,11 @@ ul {
   background-repeat: no-repeat;
   left: 14px;
   bottom: 11px;
+}
+
+.header__logo-desktop {
+  margin-top: 12px;
+  margin-bottom: auto;
 }
 
 .header__logo-mobile {
@@ -932,7 +940,7 @@ ul {
 }
 
 .footer__social-media {
-  width: 345px;
+  width: 249px;
 }
 
 .footer__social-list {
@@ -973,7 +981,7 @@ ul {
 .footer__contacts {
   width: 315px;
   min-height: 130px;
-  margin: 0 30px 30px 0;
+  margin: 0 30px 30px auto;
   position: relative;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -1013,16 +1021,15 @@ ul {
 .footer__contacts-button {
   border: none;
   position: absolute;
-  right: -2px;
-  top: -2px;
-  width: 20px;
-  height: 20px;
+  top: -17px;
+  width: 100%;
+  height: 50px;
   opacity: 0;
 }
 
 .footer__navigation {
-  width: 470px;
-  margin: 0 30px 30px 0;
+  width: 19.5vw;
+  margin: 0 30px 30px auto;
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -1041,7 +1048,7 @@ ul {
 }
 
 .footer__navigation-list {
-  width: 470px;
+  width: auto;
   min-height: 130px;
   padding-top: 5px;
   font-family: "PT Mono", sans-serif;
@@ -1060,7 +1067,8 @@ ul {
 }
 
 .footer__navigation-item {
-  width: 220px;
+  width: auto;
+  max-width: 220px;
   min-height: 35px;
 }
 
@@ -1285,7 +1293,7 @@ ul {
 
 .products__inner {
   padding: 66px 0 110px;
-  width: 1390px;
+  width: 100%;
   margin: 0 auto;
   padding-left: 82px;
 }
@@ -1297,6 +1305,7 @@ ul {
   color: #ffffff;
   margin-top: 0;
   margin-bottom: 52px;
+  padding-left: 227px;
 }
 
 .products__list {
@@ -1734,6 +1743,11 @@ ul {
   top: 13px;
 }
 
+.modal-feedback__form .modal-feedback__button-close:focus {
+  background-color: inherit;
+  opacity: 1;
+}
+
 .modal-feedback__form::before {
   content: "";
   position: absolute;
@@ -1791,47 +1805,12 @@ ul {
   }
 
   .header__nav {
-    width: auto;
-    min-width: 668px;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-  }
-
-  .header__list {
-    margin-left: 40px;
-  }
-
-  .header__button {
-    margin-left: 0;
-  }
-
-  .intro__main-screen {
-    width: 100%;
-    padding: 136px 0;
-  }
-
-  .intro__main-screen h2 {
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 94px;
-    letter-spacing: 0.07em;
-    text-transform: uppercase;
-    margin-bottom: 0;
-  }
-
-  .intro__main-screen p {
-    width: 100%;
-    margin-top: -11px;
-    margin-bottom: 73px;
-  }
-
-  .intro__button {
-    margin-left: 45px;
+    min-width: 961px;
+    width: 85vw;
   }
 
   .about-company__inner {
-    width: 670px;
+    width: 88.8vw;
   }
 
   .products__inner {
@@ -1872,6 +1851,8 @@ ul {
   }
 
   .header__nav {
+    min-width: 269px;
+    padding: 0;
     width: auto;
   }
 
@@ -1890,6 +1871,7 @@ ul {
     height: 40px;
     margin-left: 17px;
     padding-bottom: 0;
+    padding-left: 0;
   }
 
   .header__button {
@@ -2012,6 +1994,30 @@ ul {
     background-image: url("../img/background_tablet.jpg");
   }
 
+  .intro__main-screen {
+    width: 100%;
+    padding: 136px 0;
+  }
+
+  .intro__main-screen h2 {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 94px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+
+  .intro__main-screen p {
+    width: 100%;
+    margin-top: -11px;
+    margin-bottom: 73px;
+  }
+
+  .intro__button {
+    margin-left: 45px;
+  }
+
   .advantages {
     padding: 80px 0 48px;
   }
@@ -2058,6 +2064,7 @@ ul {
   }
 
   .about-company__inner {
+    width: 670px;
     padding-left: 0;
   }
 
@@ -2086,6 +2093,7 @@ ul {
   }
 
   .products__inner h3 {
+    padding-left: 0;
     margin-bottom: 36px;
   }
 
@@ -2418,11 +2426,10 @@ ul {
     display: block;
     border: none;
     position: absolute;
-    right: -2px;
-    top: -2px;
-    width: 20px;
-    height: 20px;
+    width: 100%;
+    height: 50px;
     opacity: 0;
+    top: 0;
   }
 
   .footer__navigation-list {

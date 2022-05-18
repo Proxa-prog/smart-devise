@@ -11,7 +11,7 @@
 
 .products__inner {
   padding: 66px 0 110px;
-  width: 1390px;
+  width: 100%;
   margin: 0 auto;
   padding-left: 82px;
 
@@ -22,6 +22,7 @@
     color: $color-default-white;
     margin-top: 0;
     margin-bottom: 52px;
+    padding-left: 227px;
   }
 
   @include vp-1439 {
@@ -35,6 +36,7 @@
     justify-content: center;
 
     h3 {
+      padding-left: 0;
       margin-bottom: 36px;
     }
   }

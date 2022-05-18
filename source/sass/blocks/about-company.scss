@@ -23,10 +23,11 @@
   }
 
   @include vp-1439 {
-    width: 670px;
+    width: 88.8vw;
   }
 
   @include vp-1023 {
+    width: 670px;
     padding-left: 0;
   }
 
